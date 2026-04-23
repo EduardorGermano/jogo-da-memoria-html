@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+
+    <link rel="stylesheet" href="css/game.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <button id="btnMenu" class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="header-nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-home"></i> Início
+                    </a>
+                </li>
+
+                <li>
+                    <span id="tentativas" class="status-text">Tentativas: 0</span>
+                </li>
+
+                <li>
+                    <span id="timer" class="status-text">Tempo: 00:00</span>
+                </li>
+
+                <li>
+                    <button id="btnReiniciar" class="btn" type="button">
+                        Reiniciar
+                    </button>
+                </li>
+
+                <li>
+                    <button id="btnSalvar" class="btn" type="button">
+                        Salvar
+                    </button>
+                </li>
+
+                <li>
+                    <button id="btnTema" class="btn-theme" type="button">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="game-layout">
+        <section class="game-panel">
+            <div class="board">
+                <button class="card">?</button>
+                <button class="card">?</button>
+                <button class="card">?</button>
+                <button class="card">?</button>
+                <button class="card">?</button>
+                <button class="card">?</button>
+                <button class="card">?</button>
+                <button class="card">?</button>
+                <button class="card">?</button>
+                <button class="card">?</button>
+                <button class="card">?</button>
+                <button class="card">?</button>
+            </div>
+        </section>
+
+        <aside class="ranking-panel">
+            <h2>Ranking</h2>
+            <ol id="rankingLista" class="ranking-list">
+                <li class="ranking-empty">Carregando ranking...</li>
+            </ol>
+        </aside>
+    </main>
+
+    <script type="module" src="js/index.js"></script>
+
+</body>
+
+</html>
